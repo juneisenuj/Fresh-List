@@ -4,6 +4,7 @@ import List from './List.jsx'
 
 const Main = () => {
   const [userList, setUserList] = useState([]);
+  console.log(userList)
 
   useEffect(() => {
     axios.get('/data')
