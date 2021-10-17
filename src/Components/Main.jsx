@@ -11,9 +11,10 @@ const Main = () => {
            setUserList(userList => [...userList, data.data])
          })
   }, [])
+
   return (
     <div>
-      <List list={userList}/>
+      <List userList={userList}/>
     </div>
   );
 };
