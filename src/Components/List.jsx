@@ -10,13 +10,6 @@ const List = ({ userList, showModal, setShowModal, setChosenItem }) => {
 
   console.log(userList)
 
-  const chosenItemHandler = (item) => {
-    setChosenItem({
-      title: item.title,
-      body: item.body
-    })
-  }
-
 
   return (
     <div>
