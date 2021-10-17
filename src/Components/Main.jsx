@@ -8,6 +8,7 @@ const Main = () => {
   const [userList, setUserList] = useState([]);
   const [filter, setFilter] = useState('');
   const [showModal, setShowModal] = useState(false);
+  const [chosenItem, setChosenItem] = useState({});
   console.log('Main', userList)
 
 
@@ -21,8 +22,8 @@ const Main = () => {
   return (
     <div>
       <Search filter={filter} setFilter={setFilter} userList={userList} setUserList={setUserList}/>
-      <List userList={userList} filter={filter} showModal={showModal} setShowModal={setShowModal}/>
-      <EditForm showModal={showModal} setShowModal={setShowModal}/>
+      <List userList={userList} filter={filter} showModal={showModal} setShowModal={setShowModal} setChosenItem={setChosenItem}/>
+      <EditForm showModal={showModal} setShowModal={setShowModal} chosenItem={chosenItem}/>
     </div>
   );
 };

@@ -2,13 +2,20 @@ import React from 'react';
 import styles from '../styles/List/List.module.css'
 
 
-const List = ({ userList, showModal, setShowModal }) => {
+const List = ({ userList, showModal, setShowModal, setChosenItem }) => {
 
   if (userList === undefined) {
     return 'loading';
   }
 
   console.log(userList)
+
+  const chosenItemHandler = (item) => {
+    setChosenItem({
+      title: item.title,
+      body: item.body
+    })
+  }
 
 
   return (
@@ -20,7 +27,10 @@ const List = ({ userList, showModal, setShowModal }) => {
         <div>User ID: {item.userId}</div>
         <div>Title: {item.title}</div>
         <div>Body: {item.body}</div>
-        <div onClick={() => setShowModal(true)}>Edit</div>
+        <div onClick={(e) => {
+          setShowModal(true)
+          setChosenItem(item)
+          }}>Edit</div>
       </div>
       )}
       </div>
