@@ -4,14 +4,12 @@ const Search = ({ filter, setFilter, userList, setUserList }) => {
 
   const [term, setTerm] = useState('');
   console.log('Search', userList)
-  let filtered = userList.filter(title => title.includes(term))
-  console.log(filtered)
+
 
 
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log('triggered')
-    setUserList(userList.filter(title => title.includes(term)))
+    setUserList(userList.filter(title => title.title === term))
   }
 
 

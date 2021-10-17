@@ -12,7 +12,8 @@ const Main = () => {
   useEffect(() => {
     axios.get('/data')
          .then((data) => {
-           setUserList(userList => [...userList, data.data])
+          //  setUserList(userList => [...userList, data.data])
+          setUserList(userList.concat(data.data))
          })
   }, [])
 
