@@ -7,8 +7,6 @@ const List = ({ userList }) => {
   }
 
 
-  console.log(userList[0])
-
   return (
     <div>
       {userList[0].map((item, index) =>
