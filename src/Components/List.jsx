@@ -1,7 +1,8 @@
 import React from 'react';
+import styles from '../styles/List/List.module.css'
 
 
-const List = ({ userList }) => {
+const List = ({ userList, showModal, setShowModal }) => {
 
   if (userList === undefined) {
     return 'loading';
@@ -12,15 +13,17 @@ const List = ({ userList }) => {
 
   return (
     <div>
+      <div className={styles.cards}>
       {userList.map((item, index) =>
-      <div key={index}>
+      <div className={styles.card} key={index}>
         <div>ID: {item.id}</div>
         <div>User ID: {item.userId}</div>
         <div>Title: {item.title}</div>
         <div>Body: {item.body}</div>
-        <div>Edit</div>
+        <div onClick={() => setShowModal(true)}>Edit</div>
       </div>
       )}
+      </div>
     </div>
   );
 };

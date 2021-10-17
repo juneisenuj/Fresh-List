@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,CAAC;EACL,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,QAAQ,EAAE,KAAK;EACf,IAAI,EAAE,CAAC;EACP,KAAK,EAAE,CAAC;EACR,GAAG,EAAE,CAAC;EACN,MAAM,EAAE,CAAC;EACT,gBAAgB,EAAE,kBAAkB;CACrC",
+    "sources": [
+        "EditForm.module.scss"
+    ],
+    "names": [],
+    "file": "EditForm.module.css"
+}
