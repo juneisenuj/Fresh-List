@@ -12,15 +12,15 @@ const List = ({ userList, showModal, setShowModal, setChosenItem }) => {
 
 
   return (
-    <div>
+    <div className={styles.listWrapper}>
       <div className={styles.cards}>
       {userList.map((item, index) =>
       <div className={styles.card} key={index}>
-        <div>ID: {item.id}</div>
-        <div>User ID: {item.userId}</div>
-        <div>Title: {item.title}</div>
-        <div>Body: {item.body}</div>
-        <div onClick={(e) => {
+        <div className={styles.id}>ID: {item.id}</div>
+        <div className={styles.userid}>User ID: {item.userId}</div>
+        <div className={styles.title}>Title: {item.title}</div>
+        <div className={styles.body}>Body: {item.body}</div>
+        <div className={styles.edit} onClick={(e) => {
           setShowModal(true)
           setChosenItem(item)
           }}>Edit</div>

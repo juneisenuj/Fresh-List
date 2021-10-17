@@ -6,6 +6,10 @@ const EditForm = ({ showModal, setShowModal, chosenItem }) => {
     return null
   }
 
+  const editHandler = () => {
+    
+  }
+
   return (
     <div className={styles.modal}>
       <div className={styles.modalContent}>

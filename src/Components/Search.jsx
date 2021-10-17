@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styles from '../styles/Search/Search.module.css';
 
 const Search = ({ filter, setFilter, userList, setUserList }) => {
 
@@ -14,7 +15,7 @@ const Search = ({ filter, setFilter, userList, setUserList }) => {
 
 
   return (
-    <div>
+    <div styles={styles.searchWrapper}>
       <form onSubmit={(e) => submitHandler(e)}>
         <label>
           Search:
