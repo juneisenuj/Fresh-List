@@ -12,7 +12,7 @@ const Search = ({ filter, setFilter, userList, setUserList }) => {
 
 
   return (
-    <div styles={styles.searchWrapper}>
+    <div data-testid='search-1' styles={styles.searchWrapper}>
       <form onSubmit={(e) => submitHandler(e)}>
         <label>
           Search:

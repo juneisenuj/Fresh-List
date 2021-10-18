@@ -15,14 +15,13 @@ const EditForm = ({ showModal, setShowModal, chosenItem, userList, setUserList }
   const editHandler = (e) => {
     e.preventDefault();
     let id = chosenItem.id - 1;
-    console.log(id)
     userList[id].title = title;
     userList[id].body = body;
     setShowModal(false)
   }
 
   return (
-    <div className={styles.modal}>
+    <div className={styles.modal} data-testid='editForm-1'>
       <div className={styles.modalContent}>
         <form className={styles.form}>
           <label>Title</label>

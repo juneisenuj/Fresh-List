@@ -3,7 +3,7 @@ import Main from './Components/Main.jsx'
 
 const App = () => {
   return (
-    <div>
+    <div data-testid='app-1'>
       <Main />
     </div>
   );

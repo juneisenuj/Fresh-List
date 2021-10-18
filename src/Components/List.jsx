@@ -11,7 +11,7 @@ const List = ({ userList, showModal, setShowModal, setChosenItem }) => {
 
 
   return (
-    <div className={styles.listWrapper}>
+    <div className={styles.listWrapper} data-testid='list-1'>
       <div className={styles.cards}>
       {userList.map((item, index) =>
       <div className={styles.card} key={index}>
