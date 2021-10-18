@@ -10,7 +10,6 @@ const Main = () => {
   const [filter, setFilter] = useState('');
   const [showModal, setShowModal] = useState(false);
   const [chosenItem, setChosenItem] = useState({});
-  console.log('Main', userList)
 
 
   useEffect(() => {
@@ -25,7 +24,7 @@ const Main = () => {
       <Redux />
       <Search filter={filter} setFilter={setFilter} userList={userList} setUserList={setUserList}/>
       <List userList={userList} filter={filter} showModal={showModal} setShowModal={setShowModal} setChosenItem={setChosenItem}/>
-      <EditForm showModal={showModal} setShowModal={setShowModal} chosenItem={chosenItem}/>
+      <EditForm showModal={showModal} setShowModal={setShowModal} chosenItem={chosenItem} setUserList={setUserList} userList={userList}/>
     </div>
   );
 };

@@ -4,7 +4,6 @@ import styles from '../styles/Search/Search.module.css';
 const Search = ({ filter, setFilter, userList, setUserList }) => {
 
   const [term, setTerm] = useState('');
-  console.log('Search', userList)
 
 
 

@@ -8,7 +8,6 @@ const List = ({ userList, showModal, setShowModal, setChosenItem }) => {
     return 'loading';
   }
 
-  console.log(userList)
 
 
   return (
