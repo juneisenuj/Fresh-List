@@ -5,8 +5,6 @@ const Search = ({ filter, setFilter, userList, setUserList }) => {
 
   const [term, setTerm] = useState('');
 
-
-
   const submitHandler = (e) => {
     e.preventDefault();
     setUserList(userList.filter(title => title.title === term))

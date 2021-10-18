@@ -10,7 +10,6 @@ const EditForm = ({ showModal, setShowModal, chosenItem, userList, setUserList }
     return null
   }
 
-  console.log(userList)
   console.log(chosenItem)
 
   const editHandler = (e) => {
