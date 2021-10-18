@@ -8,8 +8,6 @@ const List = ({ userList, showModal, setShowModal, setChosenItem }) => {
     return 'loading';
   }
 
-
-
   return (
     <div className={styles.listWrapper} data-testid='list-1'>
       <div className={styles.cards}>

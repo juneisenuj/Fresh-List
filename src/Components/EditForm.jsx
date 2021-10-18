@@ -2,15 +2,12 @@ import React, { useState } from 'react';
 import styles from '../styles/EditForm/EditForm.module.css'
 
 const EditForm = ({ showModal, setShowModal, chosenItem, userList, setUserList }) => {
-
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
 
   if (!showModal) {
     return null
   }
-
-  console.log(chosenItem)
 
   const editHandler = (e) => {
     e.preventDefault();

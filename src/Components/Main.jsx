@@ -9,7 +9,6 @@ const Main = () => {
   const [showModal, setShowModal] = useState(false);
   const [chosenItem, setChosenItem] = useState({});
 
-
   useEffect(() => {
     axios.get('/data')
          .then((data) => {

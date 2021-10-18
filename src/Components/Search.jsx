@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import styles from '../styles/Search/Search.module.css';
 
 const Search = ({ userList, setUserList }) => {
-
   const [term, setTerm] = useState('');
   const [active, setActive] = useState(0);
   const [filtered, setFiltered] = useState([]);
@@ -18,7 +17,6 @@ const Search = ({ userList, setUserList }) => {
     // setActive(0);
     // setIsShow(true);
   }
-
 
   return (
     <div data-testid='search-1' styles={styles.searchWrapper}>
