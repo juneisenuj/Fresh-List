@@ -7,7 +7,7 @@ const Search = ({ filter, setFilter, userList, setUserList }) => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    setUserList(userList.filter(title => title.title === term))
+    setUserList(userList.filter(title => title.title.includes(term)))
   }
 
 

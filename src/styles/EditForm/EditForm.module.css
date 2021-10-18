@@ -19,7 +19,11 @@
 .modalContent {
   background-color: white;
   width: 500px;
-  height: 300px;
+  height: 320px;
+}
+
+.formWrapper {
+  margin: 10px 10px 10px 10px;
 }
 
 .form {
@@ -30,6 +34,5 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 10px;
 }
 /*# sourceMappingURL=EditForm.module.css.map */
