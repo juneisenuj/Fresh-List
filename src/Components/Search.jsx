@@ -1,13 +1,22 @@
 import React, { useState } from 'react';
 import styles from '../styles/Search/Search.module.css';
 
-const Search = ({ filter, setFilter, userList, setUserList }) => {
+const Search = ({ userList, setUserList }) => {
 
   const [term, setTerm] = useState('');
+  const [active, setActive] = useState(0);
+  const [filtered, setFiltered] = useState([]);
+  const [isShow, setIsShow] = useState(false);
 
   const submitHandler = (e) => {
     e.preventDefault();
     setUserList(userList.filter(title => title.title.includes(term)))
+  }
+
+  const suggestionHandler = (e) => {
+    // filter function
+    // setActive(0);
+    // setIsShow(true);
   }
 
 

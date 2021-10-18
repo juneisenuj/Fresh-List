@@ -6,7 +6,6 @@ import EditForm from './EditForm.jsx'
 
 const Main = () => {
   const [userList, setUserList] = useState([]);
-  const [filter, setFilter] = useState('');
   const [showModal, setShowModal] = useState(false);
   const [chosenItem, setChosenItem] = useState({});
 
@@ -20,8 +19,8 @@ const Main = () => {
 
   return (
     <div data-testid='main-1'>
-      <Search filter={filter} setFilter={setFilter} userList={userList} setUserList={setUserList}/>
-      <List userList={userList} filter={filter} showModal={showModal} setShowModal={setShowModal} setChosenItem={setChosenItem}/>
+      <Search userList={userList} setUserList={setUserList}/>
+      <List userList={userList} showModal={showModal} setShowModal={setShowModal} setChosenItem={setChosenItem}/>
       <EditForm showModal={showModal} setShowModal={setShowModal} chosenItem={chosenItem} setUserList={setUserList} userList={userList}/>
     </div>
   );
