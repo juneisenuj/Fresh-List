@@ -15,6 +15,9 @@ const Main = () => {
          .then((data) => {
           setUserList(userList.concat(data.data))
          })
+         .catch((err) => {
+           console.log(err)
+         })
   }, [])
 
   return (

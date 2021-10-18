@@ -14,6 +14,9 @@ app.get('/data', (req, res) => {
     .then((data) => {
       res.send(JSON.stringify(data.data))
     })
+    .catch((err) => {
+      console.log(err)
+    })
 })
 
 app.listen(port, () => {
