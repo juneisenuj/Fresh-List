@@ -58,11 +58,11 @@ All dependencies should be publicly available or properly included with the proj
   
 ## Installation
  
-Install I Forgot Something with npm
+Install Fresh-List with npm
  
 ```bash
- git clone https://github.com/juneisenuj/List.git
- cd List
+ https://github.com/juneisenuj/Fresh-List.git
+ cd Fresh-List
  npm install 
  npm run start 
  npm run build
