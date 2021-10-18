@@ -1,70 +1,89 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# List
 
-## Available Scripts
+1-800-Flowers.com, Inc. code assessment
 
-In the project directory, you can run:
+## Requirements
 
-### `npm start`
+Create a multi-component React/Redux/Saga/Node Express app to process results from a REST service. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Backend (Node.js)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Restful service providing API to manage the data pulled from:
 
-### `npm test`
+http://jsonplaceholder.typicode.com/posts
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[Preferred] Use typescript to complete it in nodejs
 
-### `npm run build`
+Frontend (React/Redux/Saga SPA):
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Read data from created backend JSON rest API.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Provide the ability for users to search the JSON data by title.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Results of user search should be presented on the page.
 
-### `npm run eject`
+Provide the ability for the user to select an entry from the results and have it populate an edit form.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Provide the ability for the user to type the title of an entry in the edit form and have it populate the form.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Provide the ability for users to edit the entry and have it saved in the local Redux store. (the edited entry should be presented on subsequent searches until page reload)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+*Bonus*: incorporate auto-complete to predict what the user will type next for the title
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Requirements:
 
-## Learn More
+Use React, Redux with Sagas and Node Express Server
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Include Unit Tests for frontends and backends
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+All dependencies should be publicly available or properly included with the project and referenced within the package.json
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Preview
 
-### Analyzing the Bundle Size
+![image](https://user-images.githubusercontent.com/82249239/137771877-99aeb325-fd26-47c4-b39c-66223d8abec0.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Tech Stack
+ 
+**Client:** React, Sass, Axios, (Redux-Saga, TypeScript)
+ 
+**Server:** Node.js, Express.js
+ 
+  
+## Installation
+ 
+Install I Forgot Something with npm
+ 
+```bash
+ git clone https://github.com/juneisenuj/List.git
+ cd List
+ npm install 
+ npm run start 
+ npm run build
+```
 
-### Advanced Configuration
+    
+## API Reference
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#### Get all list
+ 
+```http
+ GET /data
+```
 
-### Deployment
+  
+## Authors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- [@juneisenuj](https://www.github.com/juneisenuj)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Acknowledgements
+
+ - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
+ - [Awesome README](https://github.com/matiassingers/awesome-readme)
+ - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
+
+  
