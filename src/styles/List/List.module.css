@@ -31,4 +31,8 @@
 .id, .userid, .title, .body, .edit {
   margin: 5px 0px 5px 5px;
 }
+
+.edit {
+  margin-left: 95%;
+}
 /*# sourceMappingURL=List.module.css.map */

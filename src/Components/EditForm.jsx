@@ -21,8 +21,10 @@ const EditForm = ({ showModal, setShowModal, chosenItem, userList, setUserList }
   }
 
   const searchHandler = () => {
-    // input title
-    // 
+    // input the exact title
+    // search through the list(userList from Main)
+    // without having to click Edit button on the list,
+    // it should automatically click? then generate chosenItem state
   }
 
   return (
