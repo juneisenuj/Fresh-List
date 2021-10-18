@@ -44,6 +44,9 @@ All dependencies should be publicly available or properly included with the proj
 
 ![image](https://user-images.githubusercontent.com/82249239/137771877-99aeb325-fd26-47c4-b39c-66223d8abec0.png)
 
+![image](https://user-images.githubusercontent.com/82249239/137772607-d192e96d-0668-4bdd-9ea3-35d77f0f4df2.png)
+
+
 
 
 ## Tech Stack
